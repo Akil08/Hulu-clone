@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@400;600&family=Rubik:wght@300;400;600;700&family=Ubuntu:ital@1&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    font-family:'Rubik';
+    background: #000;
+    color:white;
+    line-height: 1.7; /* */
+    overflow-x: hidden; /* */
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ccc;
+}
+
+ul{
+    list-style: none;
+}
+
+img{ 
+    width: 100%;
+} 
+
+h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h4{
+    color:#00ed82;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    min-width: 135px;
+    line-height:14px;
+    border-radius: 5px;
+    background:#fff;
+    color:#333;
+    padding: 20px 32px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn-outline{
+    background: none;
+    color:#fff;
+    border: 2px solid #fff;
+}
+
+.btn-outline:hover{
+    color: #fff;
+    border-color: #ccc;
+}
+
+.btn-cta:hover{
+    opacity: 0.8;
+}
+
+.legal-text{
+    margin-top: 20px;
+    color: #ccc;
+    font-size: 12px;
+}
+
+.header{
+    height:530px;
+    background: url(../img/header.jpg)  no-repeat center center / cover ; /* */
+}
+
+.header::after{
+    content: '' ;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 180px ;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.76) 15.54%,
+        rgba(0, 0, 0, 0.192) 60.23%,
+        rgba(0, 0, 0, 8e-5) 100%
+      );
+}
+
+.header nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px;
+    /* position: relative; */
+}
+
+
+.login-btn{
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 2;
+}
+
+.header .logo{
+    width: 270px;
+    margin: 20px 0;
+}
+
+.header .header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* */
+    align-items: center;   
+    margin-top:30px;
+}
+
+.header-text-1{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header-text-2{
+    font-size: 18px;
+    margin: 25px 0 ;
+}
+
+.sub-link{
+    display: block;
+    font-size: 12px;
+    color:#ccc;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+.sub-header{
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    gap:40px;
+    padding: 30px 40px;
+    background: linear-gradient(
+        318.68deg,
+        #0f495c 0%,
+        #0d3640 49.72%,
+        #08141f 100%
+      );
+    align-items: center;  
+}
+
+.sub-header > div:last-of-type{
+    justify-self: end;
+    align-self: end;
+}
+
+.sub-header > div:last-of-type .sub-link{
+    text-align: center;
+}
+
+.text-xl{
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.sub-text{
+    font-size: 25px;
+    max-width: 850px;
+}
+
+.categories{
+    padding: 90px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.categories .covers{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   margin-top: 40px;
+   gap:20px;
+}
+
+.categories .covers>div{
+    height:450px;
+    width:300px;
+    position: relative;
+}
+
+.categories .cover-text{
+    position: absolute;
+    top:20px;
+    left:20px;
+    text-align: left;
+}
+
+.categories .cover-grad{
+    /* position: absolute;
+    top:0;
+    left:0; */
+    width: 100%;
+    height:100%;
+    background: linear-gradient(
+        156.82deg,
+        rgba(0, 0, 0, 0.6) 4.58%,
+        rgba(0, 0, 0, 0) 69.61%
+      ),
+      linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+
+}
+
+.cover-1{
+    background: url(../img/cover-1.jpg) no-repeat center center / cover;
+}
+
+.cover-2{
+    background: url(../img/cover-2.jpg) no-repeat center center / cover;
+}
+
+.cover-3{
+    background: url(../img/cover-3.jpg) no-repeat center center / cover;
+}
+
+.cover-4{
+    background: url(../img/cover-4.jpg) no-repeat center center / cover;
+}
+
+.live{
+    background: #151516;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.live a{
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.live-border{
+    border: 2px solid #1ce783;
+    border-radius: 15px;
+    padding: 100px;
+}
+
+.live-sports{
+    background: url(../img/live-sports.jpg) no-repeat center center / cover;
+    height:800px;
+    position: relative;
+}
+
+.live-sports-content{
+    position: absolute;
+    top:160px;
+    left:120px;
+    max-width: 550px;
+}
+
+.live-sports-logos{
+    margin-top: 40px;
+    width:300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.live-sports-logos>div{
+    background: url(../img/network-logo-bg.png) no-repeat center center/ cover;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.live-sports-logos img{
+    width: 40px;
+}
+
+.footer{
+    background: #ebedf2;
+    color:#333 ;
+}
+
+.footer a{
+    color: #333;
+}
+
+.footer-container{
+    max-width: 1100px;
+    margin:  auto;
+    padding: 40px;
+}
+
+.footer-lists{
+    display: flex;
+    justify-content: space-between;
+}
+
+.divider{
+    width:100%;
+    height:3px;
+    border-top: 1px solid #ccc;
+    margin: 30px 0;
+}
+
+.footer-lists .list-head{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.social-icons img{
+    width:25px;
+    height: 25px;
+    margin-right: 25px;
+}
+
+.model{
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.model-box{
+    margin: 10% auto;
+    width: 400px;
+    background: #fff;
+    color: #333;
+    position: relative;
+}
+
+.model-body{
+    padding: 50px;
+}
+
+.model-body h3{
+    font-weight: bold;
+}
+
+.btn-dark{
+    background: #000;
+    color: #fff;
+
+}
+
+.model-body .btn{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.model .close{
+    height: 23px;
+    width: 23px;
+    position: absolute;
+    top:20px;
+    right:20px;
+    cursor: pointer;
+}
+
+.model-footer{
+    background: #f7f7f9;
+    color:#333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.model-footer a{
+    color: steelblue;
+}
+
+.from-control{
+    margin: 20px 0;
+}
+
+.from-control label{
+    display: block;
+    font-size: 18px;
+}
+
+.from-control input{
+    width: 100%;
+    height:50px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+@media(max-width:1200px){
+
+    .categories .covers{
+        grid-template-columns: 2fr 2fr;
+    }
+}
+
+@media(max-width:768px){
+
+    .header .logo{
+        width: 200px;
+    }
+
+    .header-content{
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .btn-cta{
+        margin-top: 25px;
+    }
+
+    .sub-header{
+        grid-template-columns: 1fr;
+        text-align:center;
+        gap: 20px;
+    }
+
+    .header-text-2{
+        display: none;
+    }
+
+    .sub-header img{
+        width: 250px;
+        margin: auto;
+    }
+    
+    .sub-header>div:last-of-type{
+        justify-self: center;
+        align-items: center;
+    }
+
+    .text-xl{
+        line-height: 1.1;
+        font-size: 35px;
+    }   
+
+    .sub-text{
+        font-size: 15px;
+    }
+
+    .categories .covers{
+        grid-template-columns: 1fr;
+    }
+
+    .live-border{
+        padding: 30px 10px;
+    } 
+    
+    .live-sports{
+        background: url(../img/live-sports-small.jpg);
+    }    
+    
+    .live-sports-content{
+        top:30px;
+        left: 30px;
+        margin-top: 60px;
+    }
+
+    .footer-lists{
+        flex-direction: column;
+    }
+}
